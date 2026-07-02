@@ -55,13 +55,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <form
-            name="website-review"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
-          >
+          <form name="website-review" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="website-review" />
 
             <p className="hidden-field">
