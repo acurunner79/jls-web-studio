@@ -20,7 +20,7 @@ const Contact = () => {
           <form
             name="website-review"
             method="POST"
-            action="/success"
+            action="/success.html"
             data-netlify="true"
             netlify-honeypot="bot-field"
           >
