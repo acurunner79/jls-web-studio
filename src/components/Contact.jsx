@@ -1,9 +1,47 @@
 /**
  * Contact
  * Renders the lead capture form for website reviews and service inquiries.
- * The form is configured for Netlify Forms in the static Phase 1 build.
+ * The form submits to Netlify Forms with fetch, then redirects to the custom
+ * success page after Netlify accepts the submission.
  */
 const Contact = () => {
+  /**
+   * encodeFormData
+   * Converts form values into URL-encoded data for Netlify Forms.
+   */
+  const encodeFormData = (data) => {
+    return new URLSearchParams(data).toString();
+  };
+
+  /**
+   * handleSubmit
+   * Prevents the default Netlify success screen, submits the form to Netlify,
+   * and redirects visitors to the custom success page.
+   */
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encodeFormData(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed.');
+      }
+
+      window.location.href = '/success.html';
+    } catch (error) {
+      console.error(error);
+      alert('Something went wrong while sending your request. Please try again.');
+    }
+  };
+
   return (
     <section className="section contact-section" id="contact">
       <div className="container contact-grid">
@@ -20,16 +58,16 @@ const Contact = () => {
           <form
             name="website-review"
             method="POST"
-            action="/success.html"
             data-netlify="true"
             netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="website-review" />
 
             <p className="hidden-field">
-              <label>
+              <label htmlFor="bot-field">
                 Do not fill this out if you are human:
-                <input name="bot-field" />
+                <input id="bot-field" name="bot-field" />
               </label>
             </p>
 
