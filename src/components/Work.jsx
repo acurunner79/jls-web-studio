@@ -6,24 +6,28 @@
 const Work = () => {
   const projects = [
     {
-      title: 'Door & Window Portfolio Demo',
-      tag: 'Portfolio Direction',
-      text: 'A modern portfolio concept for a visual home-service business.',
+      title: 'Pinto Developments',
+      tag: 'Home-Service Portfolio',
+      text: 'A modern portfolio website for a custom doors and windows installer, built to showcase services, completed work, and customer trust.',
+      link: 'https://pinto-dev.netlify.app'
     },
     {
       title: 'Command Portal',
       tag: 'Responsive Layout',
       text: 'A responsive personal command portal with clean card-based navigation.',
+      link: 'https://pinto-dev.netlify.app'
     },
     {
       title: 'Home Tracker',
       tag: 'Practical Workflows',
       text: 'A project tracking application with organized layouts and practical workflows.',
+      link: 'https://pinto-dev.netlify.app'
     },
     {
       title: 'Gift Ledger',
       tag: 'Full-Stack Experience',
       text: 'A full-stack gift list application with authentication, themes, lists, and connections.',
+      link: 'https://pinto-dev.netlify.app',
     },
   ];
 
@@ -45,6 +49,11 @@ const Work = () => {
               <span>{project.tag}</span>
               <h3>{project.title}</h3>
               <p>{project.text}</p>
+              {project.link && (
+              <a className="work-link" href={project.link} target="_blank" rel="noreferrer">
+                View Project
+              </a>
+            )}
             </article>
           ))}
         </div>
