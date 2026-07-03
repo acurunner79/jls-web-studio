@@ -24,10 +24,10 @@ const Work = () => {
       link: 'https://apex-auto-detail.netlify.app/',
     },
     {
-      title: 'Gift Ledger',
-      tag: 'Full-Stack Experience',
-      text: 'A full-stack gift list application with authentication, themes, lists, and connections.',
-      link: 'https://pinto-dev.netlify.app',
+      title: 'Blacktop Tint & Wrap',
+      tag: 'Specialty Auto Concept',
+      text: 'A bold sample website concept for a tint and wrap shop with custom service menus, project wall visuals, install workflow, and quote-focused lead capture.',
+      link: 'https://blacktop-tint.netlify.app/',
     },
   ];
 
