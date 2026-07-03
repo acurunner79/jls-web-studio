@@ -12,10 +12,10 @@ const Work = () => {
       link: 'https://pinto-dev.netlify.app'
     },
     {
-      title: 'Command Portal',
-      tag: 'Responsive Layout',
-      text: 'A responsive personal command portal with clean card-based navigation.',
-      link: 'https://pinto-dev.netlify.app'
+      title: 'FlowPro Plumbing Co.',
+      tag: 'Plumbing Service Concept',
+      text: 'A sample plumbing website concept focused on emergency contact, service clarity, trust signals, FAQs, service areas, and local service requests.',
+      link: 'https://flo-pro.netlify.app',
     },
     {
       title: 'Home Tracker',
