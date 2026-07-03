@@ -13,6 +13,8 @@ const ReviewCTA = () => {
           improved — layout, mobile experience, contact flow, photos, and quote
           request setup.
         </p>
+        <p>No website yet? That’s fine. I can still review your goals and recommend a strong starting point.
+        </p>
         <a className="btn btn-primary" href="#contact">
           Request a Free Website Review
         </a>

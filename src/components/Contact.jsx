@@ -47,11 +47,16 @@ const Contact = () => {
       <div className="container contact-grid">
         <div className="contact-form-card">
           <div className="section-heading">
-            <p className="section-kicker">Contact</p>
-            <h2>Tell me about your business.</h2>
+            <p className="section-kicker">Free website review</p>
+            <h2>Request a free website review.</h2>
             <p>
-              Share what you need help with, and I’ll review the details so we
-              can identify the best starting point.
+              Tell me about your business and website. I’ll review your current
+              online presence and send back practical notes on layout, mobile
+              experience, service clarity, and contact flow.
+            </p>
+            <p>
+              No website yet? That’s fine. I can still review your goals and
+              recommend a strong starting point.
             </p>
           </div>
 
@@ -96,6 +101,19 @@ const Contact = () => {
               />
             </label>
 
+            <label htmlFor="businessType">
+              Business Type
+              <select id="businessType" name="businessType" defaultValue="Other">
+                <option>Auto Detailing</option>
+                <option>Tint / Wrap Shop</option>
+                <option>Plumbing</option>
+                <option>Contractor / Home Service</option>
+                <option>Window / Door Installer</option>
+                <option>Landscaping</option>
+                <option>Other</option>
+              </select>
+            </label>
+
             <label htmlFor="serviceInterest">
               What type of help do you need?
               <select id="serviceInterest" name="serviceInterest" defaultValue="Not Sure Yet">
@@ -119,18 +137,22 @@ const Contact = () => {
             </label>
 
             <button className="btn btn-primary form-button" type="submit">
-              Send Request
+              Request My Free Review
             </button>
+
+            <p className="form-helper-text">
+              No pressure and no automated spam. I’ll review your request and follow up personally.
+            </p>
           </form>
         </div>
 
         <aside className="contact-side-card">
-          <h3>What happens next?</h3>
+          <h3>What I’ll review</h3>
 
           <ol>
-            <li>I review your request and current website if provided.</li>
-            <li>I look for improvement areas in layout, mobile flow, and contact options.</li>
-            <li>We identify whether a starter site, portfolio site, or refresh makes sense.</li>
+            <li>Your current website or business goals if you do not have a site yet.</li>
+            <li>Layout, mobile experience, service clarity, and contact flow.</li>
+            <li>Whether a starter site, portfolio site, refresh, or care plan makes sense.</li>
           </ol>
 
           <div className="contact-note">

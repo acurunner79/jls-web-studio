@@ -233,30 +233,34 @@ select {
 }
 
 /* ================================
-   Hero Mockup Visual
+   Hero Website Mockup
 ================================ */
 .hero-visual {
   position: relative;
   min-height: 500px;
 }
 
-/* Desktop browser mockup */
-.browser-card {
+.browser-mockup {
   position: relative;
-  width: 100%;
-  border-radius: 28px;
   overflow: hidden;
-  background: #ffffff;
-  box-shadow: var(--shadow);
-  transform: rotate(1deg);
+  padding: 72px 22px 22px;
+  border-radius: 30px;
+  background: #f8fafc;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.28);
 }
 
 .browser-top {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
-  gap: 8px;
-  padding: 18px;
-  background: #f1f5f9;
-  border-bottom: 1px solid #e2e8f0;
+  gap: 9px;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding: 0 22px;
+  background: #eef2f7;
+  border-bottom: 1px solid #dbe3ee;
 }
 
 .browser-top span {
@@ -266,129 +270,148 @@ select {
   background: #cbd5e1;
 }
 
-.mock-site {
-  padding: 22px;
-  color: var(--text);
-}
-
-.mock-hero {
+.mockup-hero-card {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 18px;
-  padding: 24px;
+  padding: 26px;
   border-radius: 22px;
-  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  background: #dbeafe;
 }
 
-.mock-hero p {
-  margin: 0 0 8px;
-  color: var(--blue-dark);
+.mockup-hero-card span,
+.mockup-feature-row span,
+.phone-content span {
+  color: var(--blue);
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
-.mock-hero h2 {
-  margin: 0;
-  max-width: 260px;
-  color: #0f172a;
-  font-size: 1.55rem;
-  line-height: 1.05;
+.mockup-hero-card h3 {
+  max-width: 320px;
+  margin: 8px 0 0;
+  color: var(--text);
+  font-size: 1.7rem;
+  line-height: 1;
   letter-spacing: -0.04em;
 }
 
-.mock-hero button,
-.phone-screen button {
-  align-self: flex-start;
-  border: 0;
+.mockup-hero-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
   border-radius: 999px;
   background: var(--blue);
   color: #ffffff;
-  padding: 10px 14px;
-  font-size: 0.82rem;
-  font-weight: 800;
+  font-size: 0.9rem;
+  font-weight: 900;
+  white-space: nowrap;
 }
 
-.mock-services {
+.mockup-feature-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
   margin-top: 18px;
 }
 
-.mock-services div {
-  height: 72px;
+.mockup-feature-row div {
+  min-height: 96px;
+  padding: 18px;
+  border: 1px solid #dbe3ee;
   border-radius: 18px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-}
-
-.mock-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.mock-gallery div {
-  height: 82px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #cbd5e1, #94a3b8);
-}
-
-/* Mobile phone mockup */
-.phone-card {
-  position: absolute;
-  right: -24px;
-  bottom: 8px;
-  width: 180px;
-  min-height: 330px;
-  padding: 12px;
-  border-radius: 34px;
-  background: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: var(--shadow);
-  transform: rotate(-5deg);
-}
-
-.phone-speaker {
-  width: 50px;
-  height: 5px;
-  margin: 4px auto 12px;
-  border-radius: 999px;
-  background: #334155;
-}
-
-.phone-screen {
-  min-height: 286px;
-  padding: 18px 14px;
-  border-radius: 24px;
   background: #ffffff;
 }
 
-.phone-title {
-  height: 18px;
-  width: 72%;
-  border-radius: 999px;
-  background: #1e3a8a;
+.mockup-feature-row p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-weight: 800;
 }
 
-.phone-block {
-  height: 74px;
+.mockup-tile-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
   margin-top: 18px;
-  border-radius: 18px;
+}
+
+.mockup-tile-row div {
+  display: grid;
+  gap: 6px;
+  min-height: 86px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #cbd5e1;
+}
+
+.mockup-tile-row strong {
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.mockup-tile-row span {
+  color: #64748b;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+/* ================================
+   Hero Phone Mockup
+================================ */
+.phone-mockup {
+  position: absolute;
+  right: -10px;
+  bottom: -16px;
+  width: 170px;
+  padding: 34px 12px 14px;
+  border: 12px solid #0f172a;
+  border-radius: 34px;
+  background: #ffffff;
+  box-shadow: 0 26px 48px rgba(15, 23, 42, 0.35);
+  transform: rotate(-6deg);
+}
+
+.phone-speaker {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  width: 48px;
+  height: 6px;
+  border-radius: 999px;
+  background: #475569;
+  transform: translateX(-50%);
+}
+
+.phone-content {
+  display: grid;
+  gap: 12px;
+}
+
+.phone-card {
+  height: 48px;
+  border-radius: 14px;
+  background: #eef2f7;
+}
+
+.phone-card.large {
+  height: 76px;
   background: #dbeafe;
 }
 
-.phone-block.short {
-  height: 48px;
-  background: #f1f5f9;
-}
-
-.phone-screen button {
-  width: 100%;
-  margin-top: 18px;
+.phone-content a {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #ffffff;
+  font-weight: 900;
 }
 
 /* ================================
@@ -706,56 +729,92 @@ select {
    Work Section
 ================================ */
 .work-section {
-  background: #ffffff;
+  background: #f1f5f9;
 }
 
 .work-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 18px;
-  margin-top: 44px;
+  margin-top: 48px;
 }
 
 .work-card {
   display: flex;
-  flex-direction: column;
   min-height: 100%;
-  padding: 26px;
-  border: 1px solid var(--border);
+  flex-direction: column;
+  padding: 28px;
+  border: 1px solid #cbd5e1;
   border-radius: 22px;
-  background: var(--white);
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+  background: #ffffff;
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.08);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.14);
 }
 
 .work-card span {
-  display: inline-flex;
-  margin-bottom: 16px;
   color: var(--blue);
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 900;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .work-card h3 {
-  margin: 0;
+  margin: 18px 0 0;
   color: var(--text);
-  font-size: 1.25rem;
-  letter-spacing: -0.025em;
+  font-size: 1.18rem;
 }
 
 .work-card p {
-  margin: 12px 0 0;
+  margin: 14px 0 0;
   color: var(--muted);
   line-height: 1.7;
 }
 
+/* Work card action link */
 .work-link {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
   margin-top: auto;
-  padding-top: 18px;
+  padding: 11px 15px;
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
   color: var(--blue);
   font-weight: 900;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.work-link::after {
+  content: '→';
+  margin-left: 8px;
+  transition: transform 160ms ease;
+}
+
+.work-link:hover {
+  transform: translateY(-1px);
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #ffffff;
+}
+
+.work-link:hover::after {
+  transform: translateX(3px);
 }
 
 /* ================================
@@ -915,6 +974,14 @@ select:focus {
   color: var(--blue-dark);
 }
 
+.form-helper-text {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 /* ================================
    Footer
 ================================ */
@@ -1008,6 +1075,14 @@ select:focus {
   .footer-links {
     flex-direction: column;
     gap: 10px;
+  }
+
+    .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card {
+    padding: 24px;
   }
 }
 

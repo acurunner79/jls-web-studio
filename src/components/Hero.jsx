@@ -36,48 +36,63 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="Website design preview">
-          <div className="browser-card">
+        <div className="hero-visual" aria-label="Website preview mockup">
+          <div className="browser-mockup">
             <div className="browser-top">
               <span></span>
               <span></span>
               <span></span>
             </div>
 
-            <div className="mock-site">
-              <div className="mock-hero">
-                <div>
-                  <p>Local Service Co.</p>
-                  <h2>Quality work, clearly shown.</h2>
-                </div>
-
-                <button type="button">Request a Quote</button>
+            <div className="mockup-hero-card">
+              <div>
+                <span>Local Service Co.</span>
+                <h3>Quality work, clearly shown.</h3>
               </div>
 
-              <div className="mock-services" aria-hidden="true">
-                <div></div>
-                <div></div>
-                <div></div>
+              <a href="#contact">Request a Quote</a>
+            </div>
+
+            <div className="mockup-feature-row">
+              <div>
+                <span>Services</span>
+                <p>Clear offer cards</p>
               </div>
 
-              <div className="mock-gallery" aria-hidden="true">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+              <div>
+                <span>Gallery</span>
+                <p>Project photos</p>
+              </div>
+            </div>
+
+            <div className="mockup-tile-row">
+              <div>
+                <strong>Reviews</strong>
+                <span>Build trust</span>
+              </div>
+
+              <div>
+                <strong>Quote Form</strong>
+                <span>Capture leads</span>
+              </div>
+
+              <div>
+                <strong>Mobile Ready</strong>
+                <span>Works anywhere</span>
               </div>
             </div>
           </div>
 
-          <div className="phone-card" aria-hidden="true">
+          <div className="phone-mockup">
             <div className="phone-speaker"></div>
 
-            <div className="phone-screen">
-              <div className="phone-title"></div>
-              <div className="phone-block"></div>
-              <div className="phone-block short"></div>
+            <div className="phone-content">
+              <span>Mobile View</span>
 
-              <button type="button">Call Now</button>
+              <div className="phone-card large"></div>
+              <div className="phone-card"></div>
+
+              <a href="#contact">Call Now</a>
             </div>
           </div>
         </div>

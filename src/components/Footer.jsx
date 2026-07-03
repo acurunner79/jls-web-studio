@@ -24,7 +24,6 @@ const Footer = () => {
         <p className="footer-credit">
           © 2026 JLS Web Studio. All rights reserved.
           <br />
-          Built by Jorge Soto.
         </p>
       </div>
     </footer>
