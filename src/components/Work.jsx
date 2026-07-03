@@ -18,10 +18,10 @@ const Work = () => {
       link: 'https://flo-pro.netlify.app',
     },
     {
-      title: 'Home Tracker',
-      tag: 'Practical Workflows',
-      text: 'A project tracking application with organized layouts and practical workflows.',
-      link: 'https://pinto-dev.netlify.app'
+      title: 'Apex Auto Detail Co.',
+      tag: 'Auto Detailing Concept',
+      text: 'A sample auto detailing website concept with premium service packages, before-and-after visuals, gallery sections, and quote-focused calls to action.',
+      link: 'https://apex-auto-detail.netlify.app/',
     },
     {
       title: 'Gift Ledger',
