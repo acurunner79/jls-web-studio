@@ -1018,6 +1018,17 @@ select:focus {
   text-align: right;
 }
 
+.footer-email {
+  display: inline-flex;
+  margin-top: 14px;
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.footer-email:hover {
+  color: var(--blue-dark);
+}
+
 /* ================================
    Full Page Responsive Styles
 ================================ */

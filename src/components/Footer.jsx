@@ -13,6 +13,10 @@ const Footer = () => {
           </a>
 
           <p>Modern websites for local service businesses.</p>
+
+          <a className="footer-email" href="mailto:hello@jlswebstudio.com">
+            hello@jlswebstudio.com
+          </a>
         </div>
 
         <nav className="footer-links" aria-label="Footer navigation">
